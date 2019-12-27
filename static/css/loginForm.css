@@ -1,0 +1,22 @@
+body {
+    text-align: center;
+}
+
+.form label{
+    font-size: medium;
+    margin-left: -20%;
+}
+
+.form input {
+    font-size: medium;
+    border: 1px solid #000;
+    border-radius: 5%;
+    padding: 10px;
+    margin: 15px;
+}
+
+.submitButton {
+    border: 1px solid #000;
+    color:#000;
+    border-radius: 5%;
+}
