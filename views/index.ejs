@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EJS Template</title>
+    </head>
+    <body>
+        <center>
+            <h1>You Searched For : <%= data.userQuery%> </h1>
+            <% if(data.loggedIn){ %>
+                <h2>You are logged in as: <%= data.username %></h2>
+            <% } %>
+            <ul>
+                <% data.searchResults.forEach(result=>{%>
+                    <li> <%- result %> </li>
+                <% }); %>
+                <!--<li><%= data.searchResults[0] %></li>
+                <li><%= data.searchResults[1] %></li>
+                <li><%= data.searchResults[2] %></li>-->
+            </ul>
+        </center>
+    </body>
+</html>
